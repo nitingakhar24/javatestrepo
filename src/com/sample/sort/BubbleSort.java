@@ -1,6 +1,7 @@
 package com.sample.sort;
 
-public class BubbleSort {
+public class BubbleSort 
+{
 
 	public static void main(String[] args) 
 	{
@@ -25,7 +26,6 @@ public class BubbleSort {
 					arr[j] = arr[j + 1];
 					arr[j + 1] = temp;
 					swapflag = true;
-					;
 				}
 			}
 			if (!swapflag) 
