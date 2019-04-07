@@ -36,7 +36,7 @@ public class SelectionSort
 {
 	public static void main(String[] args) 
 	{
-		int arr[] = {36, 19, 26, 12, 5 };
+		int arr[] = {36, 19, 26, 12, 5, 17};
 		int temp = 0;
 
 		performSort(arr, temp);

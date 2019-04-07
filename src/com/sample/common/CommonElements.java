@@ -16,7 +16,7 @@ public class CommonElements {
 	    {
 	    	for(int j = 0; j < inputArray2.length; j++)
 	    	{
-	    		if(inputArray1[i] == inputArray2[j])
+	    		if(inputArray1[i].equals(inputArray2[j]))
 	    		{
 	    			set.add(inputArray1[i]);
 	    		}

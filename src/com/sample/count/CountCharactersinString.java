@@ -1,21 +1,21 @@
 package com.sample.count;
 
-import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class CountCharactersinString {
 
 	public static void main(String[] args) 
 	{
-		countCharCount("JavaJj2EE");
-		countCharCount("Fresh Fish");
-		countCharCount("Utterly Better B utter");
+		characterCount("JavaJj2EE");
+		characterCount("Fresh Fish");
+		characterCount("Utterly Better B utter");
 	}
 
-	private static void countCharCount(String inputString) 
+	private static void characterCount(String inputString) 
 	{
 
-		Map<Character, Integer> map = new HashMap<Character, Integer>();
+		Map<Character, Integer> map = new LinkedHashMap<Character, Integer>();
 
 		char charArray[] = inputString.replaceAll("\\s", "").toCharArray();
 		for (Character ch : charArray) {

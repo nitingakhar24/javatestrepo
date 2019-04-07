@@ -27,7 +27,7 @@ public class BinaryCheck
         	}
         	else 
         	{
-        		// Removes last digit from the input number
+        		// Removes last digit from the input number or get the remainder of the input number
         		copyofNumber = copyofNumber/10;
         		binaryFlag = true;
         	}

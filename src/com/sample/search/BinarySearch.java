@@ -11,17 +11,19 @@ public class BinarySearch {
 		if (index == -1) {
 			System.out.println("Element not found");
 		} else {
-			System.out.println("Element " + element + " found at " + index + " position");
+			System.out.println("Element " + element + " found at " + index + "th index");
 		}
 	}
 
-	private int performSearch(int arr[], int arrayLength, int element) {
+	private int performSearch(int arr[], int arrayLength, int element) 
+	{
 		int left = 0, right = arrayLength - 1;
 		while (left <= right) {
-			int middle = left + (right - left) / 2;
+			//int middle = left + (right - left) / 2;
+			int middle = (left + right) / 2;
 			if (arr[middle] == element)
 				return middle;
-			if (arr[middle] < element) {
+			if (element > arr[middle]) {
 				left = middle + 1;
 			} else {
 				right = middle - 1;
