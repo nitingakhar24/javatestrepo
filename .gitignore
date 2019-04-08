@@ -1,0 +1,16 @@
+HELP.md
+/target/
+/bin/
+!.mvn/wrapper/maven-wrapper.jar
+
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
